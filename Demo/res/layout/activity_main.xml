@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/whole_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddeee" >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/jb_1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/title_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="@dimen/line_space24"
+                android:paddingRight="@dimen/line_space24" >
+
+                <TextView
+                    android:id="@+id/maintitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/font_size26"
+                    android:text="APP名称"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/font_size36"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/title_input_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_toRightOf="@+id/maintitle"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/kuang_l" />
+
+                    <RelativeLayout
+                        android:id="@+id/iv_soso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_l"
+                        android:background="@drawable/kuang_m" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_sousuo" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/input_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/re_r"
+                        android:layout_toRightOf="@+id/iv_soso"
+                        android:background="@drawable/kuang_m"
+                        android:hint="输入少于20位的数 "
+                        android:maxLength="20"
+                        android:numeric="integer"
+                        android:paddingLeft="@dimen/font_size20"
+                        android:singleLine="true"
+                        android:textColorHint="#ffffff"
+                        android:textSize="14dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/re_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/kuang_r" />
+
+                        <Button
+                            android:id="@+id/querycode_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/font_size26"
+                            android:layout_toRightOf="@+id/iv_r"
+                            android:background="@color/transparent"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:text="搜 索 "
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/font_size40"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+</RelativeLayout>
